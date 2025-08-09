@@ -3,7 +3,7 @@ const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch
 
 const BACKEND_URL = process.env.NODE_ENV === 'production' 
   ? 'https://stripe-backend-rvq9.onrender.com'
-  : 'http://localhost:3000';
+  : 'https://stripe-backend-rvq9.onrender.com';
 
 async function testBackend() {
   console.log('🧪 Testing Shavahn Bible App Backend');
